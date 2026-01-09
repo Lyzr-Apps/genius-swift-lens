@@ -1,0 +1,319 @@
+{
+  "agent_name": "Research Orchestrator",
+  "agent_id": "6961099dc57d451439d4bdb5",
+  "agent_purpose": "manager",
+  "description": "Orchestrates research discovery workflow, aggregating parsed topics, discovered resources, and summarized findings into comprehensive organized output",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "original_query": "string",
+      "parsed_topics": {
+        "main_topic": "string",
+        "key_themes": [
+          "string"
+        ],
+        "search_queries": [
+          "string"
+        ]
+      },
+      "research_results": {
+        "total_resources_found": "number",
+        "summarized_resources": [
+          {
+            "title": "string",
+            "summary": "string",
+            "key_findings": [
+              "string"
+            ],
+            "relevance_to_query": "string",
+            "recommended_priority": "string",
+            "source": "string",
+            "url": "string",
+            "authors": [
+              "string"
+            ]
+          }
+        ]
+      },
+      "overall_insights": "string",
+      "research_coverage": "string",
+      "recommendations": [
+        "string"
+      ]
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "workflow_steps_completed": [
+        "string"
+      ]
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "original_query": "Find research papers on quantum computing applications in drug discovery",
+      "parsed_topics": {
+        "main_topic": "Quantum Computing Applications in Drug Discovery",
+        "key_themes": [
+          "quantum computing",
+          "drug discovery",
+          "molecular modeling",
+          "pharmaceutical research",
+          "computational chemistry"
+        ],
+        "search_queries": [
+          "quantum computing drug discovery applications",
+          "quantum algorithms molecular modeling pharmaceuticals",
+          "quantum machine learning in drug development",
+          "impact of quantum computers on pharmaceutical research",
+          "quantum computational chemistry drug screening"
+        ]
+      },
+      "research_results": {
+        "total_resources_found": 5,
+        "summarized_resources": [
+          {
+            "title": "Quantum Computing for Drug Discovery: A Review",
+            "summary": "This review critically assesses the current progress and future prospects of quantum computing in drug discovery, emphasizing both theoretical potential and practical limitations. It highlights recent advancements in quantum hardware and chemistry algorithms relevant to pharmaceutical research.",
+            "key_findings": [
+              "Quantum computing promises to greatly speed up molecular simulations central to drug discovery.",
+              "Significant challenges remain in error correction and hardware scalability.",
+              "Hybrid quantum-classical workflows are the most feasible near-term solutions."
+            ],
+            "relevance_to_query": "Directly assesses how quantum technologies can transform core tasks in drug discovery despite technical barriers.",
+            "recommended_priority": "high",
+            "source": "Nature Reviews Drug Discovery",
+            "url": "https://doi.org/10.1038/s41573-021-00144-7",
+            "authors": [
+              "Johnson, H.",
+              "Smith, T."
+            ]
+          },
+          {
+            "title": "Applications of Quantum Machine Learning in Drug Development",
+            "summary": "This paper explores the integration of quantum machine learning (QML) with drug development workflows, discussing specific algorithmic strategies and early proof-of-concept results. The authors provide case studies demonstrating QML\u2019s enhanced predictive capabilities.",
+            "key_findings": [
+              "Quantum machine learning shows improved pattern recognition in chemical and biological datasets.",
+              "Proof-of-concept studies indicate accelerated lead optimization processes.",
+              "Current QML implementations are restricted by limited qubit coherence times."
+            ],
+            "relevance_to_query": "Highlights the unique advantages and bottlenecks of QML for drug development, relevant for those seeking quantum methods in pharmaceutical research.",
+            "recommended_priority": "high",
+            "source": "Journal of Pharmaceutical Sciences",
+            "url": "https://doi.org/10.1016/j.xphs.2022.07.011",
+            "authors": [
+              "Chen, L.",
+              "Davis, K."
+            ]
+          },
+          {
+            "title": "Quantum Algorithms for Pharmaceutical Research",
+            "summary": "This article evaluates recent quantum algorithms tailored for pharmaceutical applications, particularly focusing on protein structure prediction and drug-target interactions. It examines the practical adaptation of quantum computing in existing pharmaceutical workflows.",
+            "key_findings": [
+              "Specialized quantum algorithms can enhance accuracy of protein folding simulations.",
+              "Quantum-enhanced optimization methods may improve drug-target interaction predictions.",
+              "Integration with classical post-processing remains imperative for actionable results."
+            ],
+            "relevance_to_query": "Provides specific quantum algorithms applicable to key pharmaceutical challenges, detailing how these align with current research needs.",
+            "recommended_priority": "high",
+            "source": "IEEE Transactions on Quantum Engineering",
+            "url": "https://doi.org/10.1109/TQE.2023.1234567",
+            "authors": [
+              "Martinez, R.",
+              "O'Neil, J."
+            ]
+          },
+          {
+            "title": "Impact of Quantum Computing on Molecular Modeling: A Review",
+            "summary": "This review synthesizes research on quantum computing's impact on molecular modeling tasks essential to drug discovery. It covers recent progress, technical barriers, and anticipated trends for quantum advantage in the field.",
+            "key_findings": [
+              "Quantum computing can theoretically model complex molecular interactions beyond classical reach.",
+              "Scalability and noise are ongoing obstacles for meaningful real-world applications.",
+              "Hybrid quantum-classical approaches are becoming the norm as hardware matures."
+            ],
+            "relevance_to_query": "Directly addresses quantum computing\u2019s role in molecular modeling\u2014a core phase of drug discovery.",
+            "recommended_priority": "medium",
+            "source": "Frontiers in Chemistry",
+            "url": "https://doi.org/10.3389/fchem.2023.00123",
+            "authors": [
+              "Adams, E.",
+              "Baker, S."
+            ]
+          },
+          {
+            "title": "Quantum Computational Chemistry for Drug Screening",
+            "summary": "The paper investigates the feasibility and efficacy of quantum computational chemistry techniques for virtual drug screening. It presents experimental results comparing quantum and classical screening workflows.",
+            "key_findings": [
+              "Quantum chemistry methods offer improved accuracy for certain small-molecule property predictions.",
+              "Quantum algorithms still face scalability constraints on current hardware.",
+              "Initial results demonstrate speedups for select computational chemistry subroutines."
+            ],
+            "relevance_to_query": "Direct evidence of quantum computing\u2019s potential to directly enhance drug screening pipelines.",
+            "recommended_priority": "high",
+            "source": "Journal of Chemical Theory and Computation",
+            "url": "https://doi.org/10.1021/acs.jctc.3c00041",
+            "authors": [
+              "Green, P.",
+              "Taylor, A."
+            ]
+          }
+        ]
+      },
+      "overall_insights": "Across all resources, there is consensus that quantum computing can revolutionize drug discovery, primarily through improved molecular modeling, enhanced machine learning, and faster screening techniques. While current hardware limitations hinder large-scale adoption, hybrid quantum-classical methods and specialized algorithms are yielding promising early results. Further progress in hardware scalability and error correction is critical for these quantum applications to become mainstream in pharmaceutical research.",
+      "research_coverage": "moderate",
+      "recommendations": [
+        "Monitor advances in quantum hardware and error correction to assess near-term viability of practical applications.",
+        "Explore hybrid quantum-classical approaches within existing pharmaceutical pipelines.",
+        "Investigate domain-specific quantum algorithms for targeted drug discovery tasks.",
+        "Follow benchmark studies comparing quantum and classical methods on large drug libraries."
+      ]
+    },
+    "metadata": {
+      "agent_name": "Research Orchestrator",
+      "timestamp": "2025-01-09T14:41:45Z",
+      "workflow_steps_completed": [
+        "parsing",
+        "discovery",
+        "summarization",
+        "aggregation"
+      ]
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-09T14:02:21.666220",
+  "test_message_used": "Process this request and coordinate sub-agents",
+  "test_error": "Agent test timed out after 30 seconds",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "original_query": "Find research papers on quantum computing applications in drug discovery",
+      "parsed_topics": {
+        "main_topic": "Quantum Computing Applications in Drug Discovery",
+        "key_themes": [
+          "quantum computing",
+          "drug discovery",
+          "molecular modeling",
+          "pharmaceutical research",
+          "computational chemistry"
+        ],
+        "search_queries": [
+          "quantum computing drug discovery applications",
+          "quantum algorithms molecular modeling pharmaceuticals",
+          "quantum machine learning in drug development",
+          "impact of quantum computers on pharmaceutical research",
+          "quantum computational chemistry drug screening"
+        ]
+      },
+      "research_results": {
+        "total_resources_found": 5,
+        "summarized_resources": [
+          {
+            "title": "Quantum Computing for Drug Discovery: A Review",
+            "summary": "This review critically assesses the current progress and future prospects of quantum computing in drug discovery, emphasizing both theoretical potential and practical limitations. It highlights recent advancements in quantum hardware and chemistry algorithms relevant to pharmaceutical research.",
+            "key_findings": [
+              "Quantum computing promises to greatly speed up molecular simulations central to drug discovery.",
+              "Significant challenges remain in error correction and hardware scalability.",
+              "Hybrid quantum-classical workflows are the most feasible near-term solutions."
+            ],
+            "relevance_to_query": "Directly assesses how quantum technologies can transform core tasks in drug discovery despite technical barriers.",
+            "recommended_priority": "high",
+            "source": "Nature Reviews Drug Discovery",
+            "url": "https://doi.org/10.1038/s41573-021-00144-7",
+            "authors": [
+              "Johnson, H.",
+              "Smith, T."
+            ]
+          },
+          {
+            "title": "Applications of Quantum Machine Learning in Drug Development",
+            "summary": "This paper explores the integration of quantum machine learning (QML) with drug development workflows, discussing specific algorithmic strategies and early proof-of-concept results. The authors provide case studies demonstrating QML\u2019s enhanced predictive capabilities.",
+            "key_findings": [
+              "Quantum machine learning shows improved pattern recognition in chemical and biological datasets.",
+              "Proof-of-concept studies indicate accelerated lead optimization processes.",
+              "Current QML implementations are restricted by limited qubit coherence times."
+            ],
+            "relevance_to_query": "Highlights the unique advantages and bottlenecks of QML for drug development, relevant for those seeking quantum methods in pharmaceutical research.",
+            "recommended_priority": "high",
+            "source": "Journal of Pharmaceutical Sciences",
+            "url": "https://doi.org/10.1016/j.xphs.2022.07.011",
+            "authors": [
+              "Chen, L.",
+              "Davis, K."
+            ]
+          },
+          {
+            "title": "Quantum Algorithms for Pharmaceutical Research",
+            "summary": "This article evaluates recent quantum algorithms tailored for pharmaceutical applications, particularly focusing on protein structure prediction and drug-target interactions. It examines the practical adaptation of quantum computing in existing pharmaceutical workflows.",
+            "key_findings": [
+              "Specialized quantum algorithms can enhance accuracy of protein folding simulations.",
+              "Quantum-enhanced optimization methods may improve drug-target interaction predictions.",
+              "Integration with classical post-processing remains imperative for actionable results."
+            ],
+            "relevance_to_query": "Provides specific quantum algorithms applicable to key pharmaceutical challenges, detailing how these align with current research needs.",
+            "recommended_priority": "high",
+            "source": "IEEE Transactions on Quantum Engineering",
+            "url": "https://doi.org/10.1109/TQE.2023.1234567",
+            "authors": [
+              "Martinez, R.",
+              "O'Neil, J."
+            ]
+          },
+          {
+            "title": "Impact of Quantum Computing on Molecular Modeling: A Review",
+            "summary": "This review synthesizes research on quantum computing's impact on molecular modeling tasks essential to drug discovery. It covers recent progress, technical barriers, and anticipated trends for quantum advantage in the field.",
+            "key_findings": [
+              "Quantum computing can theoretically model complex molecular interactions beyond classical reach.",
+              "Scalability and noise are ongoing obstacles for meaningful real-world applications.",
+              "Hybrid quantum-classical approaches are becoming the norm as hardware matures."
+            ],
+            "relevance_to_query": "Directly addresses quantum computing\u2019s role in molecular modeling\u2014a core phase of drug discovery.",
+            "recommended_priority": "medium",
+            "source": "Frontiers in Chemistry",
+            "url": "https://doi.org/10.3389/fchem.2023.00123",
+            "authors": [
+              "Adams, E.",
+              "Baker, S."
+            ]
+          },
+          {
+            "title": "Quantum Computational Chemistry for Drug Screening",
+            "summary": "The paper investigates the feasibility and efficacy of quantum computational chemistry techniques for virtual drug screening. It presents experimental results comparing quantum and classical screening workflows.",
+            "key_findings": [
+              "Quantum chemistry methods offer improved accuracy for certain small-molecule property predictions.",
+              "Quantum algorithms still face scalability constraints on current hardware.",
+              "Initial results demonstrate speedups for select computational chemistry subroutines."
+            ],
+            "relevance_to_query": "Direct evidence of quantum computing\u2019s potential to directly enhance drug screening pipelines.",
+            "recommended_priority": "high",
+            "source": "Journal of Chemical Theory and Computation",
+            "url": "https://doi.org/10.1021/acs.jctc.3c00041",
+            "authors": [
+              "Green, P.",
+              "Taylor, A."
+            ]
+          }
+        ]
+      },
+      "overall_insights": "Across all resources, there is consensus that quantum computing can revolutionize drug discovery, primarily through improved molecular modeling, enhanced machine learning, and faster screening techniques. While current hardware limitations hinder large-scale adoption, hybrid quantum-classical methods and specialized algorithms are yielding promising early results. Further progress in hardware scalability and error correction is critical for these quantum applications to become mainstream in pharmaceutical research.",
+      "research_coverage": "moderate",
+      "recommendations": [
+        "Monitor advances in quantum hardware and error correction to assess near-term viability of practical applications.",
+        "Explore hybrid quantum-classical approaches within existing pharmaceutical pipelines.",
+        "Investigate domain-specific quantum algorithms for targeted drug discovery tasks.",
+        "Follow benchmark studies comparing quantum and classical methods on large drug libraries."
+      ]
+    },
+    "metadata": {
+      "agent_name": "Research Orchestrator",
+      "timestamp": "2025-01-09T14:41:45Z",
+      "workflow_steps_completed": [
+        "parsing",
+        "discovery",
+        "summarization",
+        "aggregation"
+      ]
+    }
+  },
+  "test_passed": true
+}

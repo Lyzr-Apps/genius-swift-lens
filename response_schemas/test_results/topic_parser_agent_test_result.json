@@ -1,0 +1,41 @@
+{
+  "agent_name": "Topic Parser Agent",
+  "agent_id": "6961092e5e0239738a838ce8",
+  "test_message": "I'm researching the impact of artificial intelligence on climate change mitigation, particularly focusing on machine learning applications for carbon capture optimization and renewable energy grid management. I'm interested in both theoretical frameworks and practical implementations.",
+  "expected_purpose": "parser",
+  "timestamp": "2026-01-09T14:00:08.265700",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "main_topic": "Artificial Intelligence Applications in Climate Change Mitigation",
+      "key_themes": [
+        "artificial intelligence",
+        "machine learning",
+        "carbon capture optimization",
+        "renewable energy grid management",
+        "climate change mitigation"
+      ],
+      "search_queries": [
+        "machine learning carbon capture optimization climate mitigation",
+        "artificial intelligence renewable energy grid management",
+        "AI-based climate change mitigation frameworks",
+        "practical implementations machine learning climate solutions",
+        "theoretical foundations AI climate mitigation"
+      ],
+      "sub_topics": [
+        "theoretical frameworks for AI in climate mitigation",
+        "machine learning for carbon capture efficiency",
+        "AI-driven renewable energy grid management",
+        "case studies of AI-enabled climate mitigation"
+      ],
+      "research_scope": "Examines the theoretical foundations and real-world applications of artificial intelligence, especially machine learning, in optimizing carbon capture processes and managing renewable energy grids to mitigate climate change."
+    },
+    "metadata": {
+      "agent_name": "Topic Parser Agent",
+      "timestamp": "2025-01-09T16:06:32Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"main_topic\": \"Artificial Intelligence Applications in Climate Change Mitigation\",\n    \"key_themes\": [\n      \"artificial intelligence\",\n      \"machine learning\",\n      \"carbon capture optimization\",\n      \"renewable energy grid management\",\n      \"climate change mitigation\"\n    ],\n    \"search_queries\": [\n      \"machine learning carbon capture optimization climate mitigation\",\n      \"artificial intelligence renewable energy grid management\",\n      \"AI-based climate change mitigation frameworks\",\n      \"practical implementations machine learning climate solutions\",\n      \"theoretical foundations AI climate mitigation\"\n    ],\n    \"sub_topics\": [\n      \"theoretical frameworks for AI in climate mitigation\",\n      \"machine learning for carbon capture efficiency\",\n      \"AI-driven renewable energy grid management\",\n      \"case studies of AI-enabled climate mitigation\"\n    ],\n    \"research_scope\": \"Examines the theoretical foundations and real-world applications of artificial intelligence, especially machine learning, in optimizing carbon capture processes and managing renewable energy grids to mitigate climate change.\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Topic Parser Agent\",\n    \"timestamp\": \"2025-01-09T16:06:32Z\"\n  }\n}"
+}

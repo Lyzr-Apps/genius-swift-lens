@@ -1,0 +1,112 @@
+{
+  "agent_name": "Summary Generator Agent",
+  "agent_id": "696109765e0239738a838cea",
+  "agent_purpose": "analyzer",
+  "description": "Generates concise summaries of research papers with key findings, methodology, and relevance assessments",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "summarized_resources": [
+        {
+          "resource_id": "string",
+          "title": "string",
+          "summary": "string",
+          "key_findings": [
+            "string"
+          ],
+          "methodology": "string",
+          "relevance_to_query": "string",
+          "recommended_priority": "string"
+        }
+      ],
+      "total_summarized": "number",
+      "overall_insights": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "summarized_resources": [
+        {
+          "resource_id": "Smith2023-MLCarbonCapture",
+          "title": "Machine Learning for Carbon Capture Optimization",
+          "summary": "Smith et al. (2023) present a machine learning framework that dynamically optimizes carbon capture processes, resulting in significant efficiency improvements compared to conventional methods. The study utilized supervised learning algorithms on operational plant data to predict and adjust key process parameters for enhanced CO2 capture.",
+          "key_findings": [
+            "Machine learning increased capture efficiency by up to 15%",
+            "Enabled real-time process adjustments based on predictive analytics",
+            "Reduced operational costs without compromising capture rates"
+          ],
+          "methodology": "Supervised machine learning applied to large-scale operational datasets with performance validated in pilot plant settings",
+          "relevance_to_query": "Directly addresses the application of machine learning in optimizing carbon capture, offering empirical evidence of practical benefits",
+          "recommended_priority": "high"
+        },
+        {
+          "resource_id": "Johnson2024-AIGridManagement",
+          "title": "AI-Driven Renewable Energy Grid Management",
+          "summary": "Johnson et al. (2024) develop an AI-based system for optimizing the integration of renewable energy sources into existing power grids. Their approach leverages reinforcement learning to balance supply and demand, resulting in lower energy curtailment and improved grid stability.",
+          "key_findings": [
+            "Reduced renewable energy curtailment by 20%",
+            "Enhanced grid reliability during peak periods",
+            "Facilitated cost-effective integration of diverse renewables"
+          ],
+          "methodology": "Reinforcement learning models simulated in real-world grid scenarios with historical grid and weather data",
+          "relevance_to_query": "Demonstrates how AI optimizes renewable energy management and grid stability, highlighting operational value for modern power systems",
+          "recommended_priority": "high"
+        }
+      ],
+      "total_summarized": 2,
+      "overall_insights": "Both studies showcase successful applications of advanced machine learning in optimizing energy-related processes\u2014one for carbon capture, the other for grid management\u2014demonstrating measurable efficiency gains and operational savings. AI and machine learning stand out as transformative tools for sustainable energy and environmental management."
+    },
+    "metadata": {
+      "agent_name": "Summary Generator Agent",
+      "timestamp": "2025-01-09T15:32:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-01-09T14:00:40.072122",
+  "test_message_used": "Analyze this sample data for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "summarized_resources": [
+        {
+          "resource_id": "Smith2023-MLCarbonCapture",
+          "title": "Machine Learning for Carbon Capture Optimization",
+          "summary": "Smith et al. (2023) present a machine learning framework that dynamically optimizes carbon capture processes, resulting in significant efficiency improvements compared to conventional methods. The study utilized supervised learning algorithms on operational plant data to predict and adjust key process parameters for enhanced CO2 capture.",
+          "key_findings": [
+            "Machine learning increased capture efficiency by up to 15%",
+            "Enabled real-time process adjustments based on predictive analytics",
+            "Reduced operational costs without compromising capture rates"
+          ],
+          "methodology": "Supervised machine learning applied to large-scale operational datasets with performance validated in pilot plant settings",
+          "relevance_to_query": "Directly addresses the application of machine learning in optimizing carbon capture, offering empirical evidence of practical benefits",
+          "recommended_priority": "high"
+        },
+        {
+          "resource_id": "Johnson2024-AIGridManagement",
+          "title": "AI-Driven Renewable Energy Grid Management",
+          "summary": "Johnson et al. (2024) develop an AI-based system for optimizing the integration of renewable energy sources into existing power grids. Their approach leverages reinforcement learning to balance supply and demand, resulting in lower energy curtailment and improved grid stability.",
+          "key_findings": [
+            "Reduced renewable energy curtailment by 20%",
+            "Enhanced grid reliability during peak periods",
+            "Facilitated cost-effective integration of diverse renewables"
+          ],
+          "methodology": "Reinforcement learning models simulated in real-world grid scenarios with historical grid and weather data",
+          "relevance_to_query": "Demonstrates how AI optimizes renewable energy management and grid stability, highlighting operational value for modern power systems",
+          "recommended_priority": "high"
+        }
+      ],
+      "total_summarized": 2,
+      "overall_insights": "Both studies showcase successful applications of advanced machine learning in optimizing energy-related processes\u2014one for carbon capture, the other for grid management\u2014demonstrating measurable efficiency gains and operational savings. AI and machine learning stand out as transformative tools for sustainable energy and environmental management."
+    },
+    "metadata": {
+      "agent_name": "Summary Generator Agent",
+      "timestamp": "2025-01-09T15:32:00Z"
+    }
+  },
+  "test_passed": true
+}
