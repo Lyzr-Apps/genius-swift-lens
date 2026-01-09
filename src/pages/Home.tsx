@@ -147,16 +147,20 @@ export default function Home() {
       setLoadingStage('summarizing')
 
       // Stage 3: Call the Research Orchestrator Agent
-      const result = await fetch('https://agent-prod.studio.lyzr.ai/v3/inference/chat', {
+      const userId = `user-${Date.now()}`
+      const sessionId = `${AGENT_ID}-${Date.now()}`
+
+      const result = await fetch('https://agent-prod.studio.lyzr.ai/v3/inference/chat/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'x-api-key': import.meta.env.VITE_LYZR_API_KEY || ''
         },
         body: JSON.stringify({
-          agent_id: AGENT_ID,
           message: researchTopic,
-          user_id: `user_${Date.now()}`
+          agent_id: AGENT_ID,
+          user_id: userId,
+          session_id: sessionId
         })
       })
 
