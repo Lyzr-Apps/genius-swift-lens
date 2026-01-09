@@ -147,7 +147,7 @@ export default function Home() {
       setLoadingStage('summarizing')
 
       // Stage 3: Call the Research Orchestrator Agent
-      const result = await fetch('https://agent-prod.studio.lyzr.ai/v2/agent/chat', {
+      const result = await fetch('https://agent-prod.studio.lyzr.ai/v3/inference/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
