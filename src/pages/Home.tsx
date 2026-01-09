@@ -151,6 +151,7 @@ export default function Home() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'x-api-key': import.meta.env.VITE_LYZR_API_KEY || ''
         },
         body: JSON.stringify({
           agent_id: AGENT_ID,
